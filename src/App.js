@@ -66,7 +66,13 @@ function App() {
               <Footer />
             </>
           } />
-          <Route path="/about" element={<About />} />
+          <Route path="/about" element={
+            <>
+              <Header title="My Todos List" searchBar={false} />
+              <About />
+              <Footer />
+            </>
+          } />
         </Routes>
       </Router>
 
